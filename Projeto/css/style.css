@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    background-image: url(../img/mariana_pic.jpeg);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.banner__content {
+    text-align: center;
+}
+
+.banner__title {
+    font-size: 40px;
+}
+
+.banner__undertitle {
+    font-size: 24px;
+}
+
+.banner__link {
+    text-decoration: none;
+    color: rgb(102, 35, 102);
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border-style: ridge;
+    border-color: rgb(102, 35, 102);
+}
+
+.banner__link:hover {
+    background-color: rgb(240, 188, 240);
+}
+
+.about {
+    padding: 50px;
+}
+
+.about__title {
+    color: rgb(129, 123, 129);
+    font-size: 40px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.about__description {
+    width: 50%;
+}
+
+.description_2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.description_3 {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-family: 'Great Vibes';
+    font-size: 38px;
+    justify-content: center;
+    padding: 10px, 50px, 50px, 50px;
+    text-align: center;
+}
+
+.about__habilities {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__medias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media__links {
+    background-color: rgb(102, 35, 102);
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.media__links:hover {
+    opacity: 0.8;
+}
+
+@media(min-width: 1200px) {
+    .about__content {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__description {
+        width: 100%;
+    }
+
+    .about__habilities {
+        width: 100%;
+    }
+}
